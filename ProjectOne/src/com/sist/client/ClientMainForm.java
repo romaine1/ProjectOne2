@@ -83,7 +83,7 @@ public class ClientMainForm extends JFrame implements ActionListener {
 				mr.tf.requestFocus();
 				return;
 			}
-
+System.out.println();
 			// 중복 체크
 			String temp = "";
 			for (int i = 0; i < wr.model1.getRowCount(); i++) {
