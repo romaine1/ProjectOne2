@@ -139,6 +139,11 @@ public class ClientMainForm extends JFrame implements ActionListener {
 			System.out.println(wr.table1.getSelectedRow());
 			
 		}
+		// 게임 시작하기
+		else if(e.getSource()==gr.start){
+			System.out.println("gp를 띄워라");
+			System.exit(0);
+		}
 
 	}
 
