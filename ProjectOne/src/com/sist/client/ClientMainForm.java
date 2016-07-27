@@ -32,6 +32,9 @@ public class ClientMainForm extends JFrame implements ActionListener {
 
 		mr.b1.addActionListener(this); // 방만들기
 		mr.b2.addActionListener(this); // 방만들기 취소
+		
+		gr.start.addActionListener(this); // 게임 시작하기
+		gr.end.addActionListener(this); //방 나가기
 	}
 
 	@Override
@@ -141,8 +144,12 @@ public class ClientMainForm extends JFrame implements ActionListener {
 		}
 		// 게임 시작하기
 		else if(e.getSource()==gr.start){
-			System.out.println("gp를 띄워라");
-			System.exit(0);
+			System.out.println("되나");
+			gr.wp.setVisible(false);
+			gr.gp.setVisible(true);
+		}
+		else if(e.getSource()==gr.end){
+			card.show(getContentPane(), "WR");
 		}
 
 	}
